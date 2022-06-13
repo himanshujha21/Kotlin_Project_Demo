@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AdsExample</string>
+    <string name="appID">ca-app-pub-4670712017885136~6800941366</string>
+    <string name="bannerAdUnitId">ca-app-pub-4670712017885136/3296810629</string>
+
+    <string name="interstitialAdUnitId">ca-app-pub-4670712017885136/4916217895</string>
+
+</resources>

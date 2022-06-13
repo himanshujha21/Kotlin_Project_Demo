@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/font"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:src="@drawable/ic_bmi_range"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:background="@drawable/bg_edit"
+        android:drawableStart="@mipmap/ic_weight_scale"
+        android:ems="10"
+        android:fontFamily="@font/alike"
+        android:hint="@string/enter_your_weight_in_kg"
+        android:inputType="number"
+        android:padding="@dimen/dimen_10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/dim_16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBMI" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:background="@drawable/bg_edit"
+        android:drawableStart="@mipmap/ic_height"
+        android:ems="10"
+        android:fontFamily="@font/alike"
+        android:hint="@string/enter_your_height_in_feet"
+        android:inputType="number"
+        android:padding="@dimen/dimen_10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/dim_16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtWeight" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtInches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:layout_marginEnd="@dimen/dimen_12dp"
+        android:background="@drawable/bg_edit"
+        android:drawableStart="@mipmap/ic_height"
+        android:ems="10"
+        android:fontFamily="@font/alike"
+        android:hint="@string/enter_your_height_in_inches"
+        android:inputType="number"
+        android:padding="@dimen/dimen_10dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/dim_16sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtHeight"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_100dp"
+        android:layout_marginTop="@dimen/dimen_24dp"
+        android:layout_marginEnd="@dimen/dimen_100dp"
+        android:background="@drawable/bg_edit"
+        android:fontFamily="@font/alike"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/calculate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtInches" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:background="@drawable/bg_edit"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/your_bmi_status"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculator" />
+</androidx.constraintlayout.widget.ConstraintLayout>
